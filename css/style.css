@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    color: #204f87;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #f15d2b;
+}
+
+.banner {
+    background-image: url(../image/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.height {
+    min-height: 90vh;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 93px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.icon {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    color: #fff;
+    transform: translatex(-50%);
+    animation: ani 1s linear infinite;
+    animation-direction: alternate;
+    font-size: 20px;
+}
+
+@keyframes ani {
+    0% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 90px;
+    }
+}
+
+.who_we_are {}
+
+.who_we_are span {
+
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #f15d2b;
+    margin-top: 50px;
+    transition: 1s all ease-out;
+}
+
+.who_we_are:hover span {
+    width: 16%;
+}
+
+.who_we_are h1 {
+
+    color: #204f87;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.who_we_are p {
+
+    color: #bebebe;
+}
+
+.who_we_are img {}
+
+.what_we_do {
+    background-image: url(../image/what-service-background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+.what_we_do span {
+
+    display: block;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    background-color: #f15d2b;
+    margin-bottom: 10px;
+    transition: 1s all ease-out;
+}
+
+.what_we_do h1 {
+
+    color: #204f87;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.what_we_do:hover span {
+    width: 7%;
+}
+
+.what_we_do_service {
+    margin: 100px 0;
+    position: relative;
+}
+
+.what_we_do_service img {
+
+    width: 100%;
+}
+
+.content {
+
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s all ease-out;
+}
+
+.content h2 {
+    font-size: 23px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.arrow {
+
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 25px;
+    opacity: 0;
+    transition: .4s all ease-out;
+}
+
+.what_we_do_service:hover .content {
+    opacity: 1;
+    top: 50%;
+}
+
+.what_we_do_service:hover .arrow {
+    opacity: 1;
+    bottom: 50px;
+}
+
+.what_we_do_service::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(40, 55, 126, 0.6138830532212884) 25%, rgba(40, 55, 126, 0) 60%);
+    transition: .1s all ease-out;
+}
+
+.what_we_do_service:hover:before {
+    height: 100%;
+}
+
+.attorney {
+    background-image: url(../image/client_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.attorney span {
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #f15d2b;
+    margin-top: 150px;
+    transition: 1s all ease-out;
+}
+
+.attorney:hover span {
+    width: 25%;
+}
+
+.attorney h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.attorney p {
+    color: #bebebe;
+}
+
+.attorney a {
+    text-decoration: none;
+    color: #f15d2b;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.attorney_client {
+    position: relative;
+}
+
+.attorney_client::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(40, 55, 126, 0.6138830532212884) 10%, rgba(40, 55, 126, 0) 45%);
+    transition: .1s all ease-out;
+}
+
+.attorney_client:hover::before {
+    height: 100%;
+}
+
+.attorney_client img {
+    width: 100%;
+}
+
+.attorney_content {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: #fff;
+    opacity: 0;
+    transition: .1s all ease-out;
+}
+
+.attorney_client:hover .attorney_content {
+    opacity: 1;
+    bottom: 11%;
+}
+
+.attorney_content h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.languages {}
+
+.languages span {
+    display: block;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    background-color: #f15d2b;
+    margin-bottom: 10px;
+    transition: 1s all ease-out;
+    margin-top: 50px;
+}
+
+.languages:hover span {
+    width: 8%;
+}
+
+.languages h1 {
+    text-align: center;
+    color: #204f87;
+    font-weight: 700;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.language_content {
+    padding: 10px 0;
+}
+
+.language_content h2 {
+    color: #28377e;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.language_content p {
+    color: #b1b0b1;
+    margin-bottom: 15px;
+}
+
+.language_content a {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f2622c;
+}
+
+.contact_from {
+    background-color: #28377e;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.contact_from span {
+    display: block;
+    background-color: #f2622c;
+    height: 3px;
+    width: 0%;
+    transition: 1s all ease-in-out;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contact_from:hover span {
+    width: 8%;
+}
+
+.contact_from h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    text-align: center;
+    color: #fff;
+}
+
+.form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #bebebe;
+    padding: 10px 0px;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.form input:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+.form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #bebebe;
+    padding: 10px 0px;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.form textarea:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #f15d2b;
+    color: #fff;
+    padding: 10px 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+.footer {
+    background-color: #0c1234;
+    padding: 30px 0;
+}
+
+.footer h2 {
+    color: #616ca8;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.footer_icon {}
+
+.footer_icon ul {
+    text-decoration: none;
+    display: flex;
+
+    justify-content: end;
+    margin-bottom: 0px;
+}
+
+.footer_icon li {
+
+    list-style: none;
+    color: #b1b8dd;
+    margin-left: 20px;
+}
